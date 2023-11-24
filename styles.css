@@ -154,15 +154,17 @@ a{
 }
 
 /* card */
+
+.banner-aside-mix_img{
+    position: relative;
+}
 .banner-img{
     align-items: end;
     width: 163.119px;
     height: 352.791px;
     flex-shrink: 0;
 }
-.banner-aside-mix_img{
-    position: relative;
-}
+
 
 .aside-figure-card{
     position: absolute;
@@ -174,6 +176,12 @@ a{
     background: rgba(14, 10, 95, 0.60);
     top: 180px;
     
+}
+
+
+
+.aside-figure-card p{
+    color: #FFF;
 }
 .section-spon-div{
     display: none;
@@ -257,6 +265,14 @@ a{
         margin-bottom: 0;
     }
 
+    .aside-figure-card{
+        top: 100px;
+        left: 80px;
+    }
+    .banner-aside-mix_img{
+        text-align: left;
+        position: relative;
+    }
 
     .section-spon-div {
         display: flex; /* Adjusted display property */
@@ -316,4 +332,29 @@ a{
         background: rgba(15, 70, 190, 0.027);
     }
  
+}
+
+
+@media (min-width: 900px){
+    .bussiness-container{
+        padding: 0px 120px;
+    }
+    .banner-title{
+        text-align: left;
+    }
+    .banner-text{
+        text-align: left; 
+    }
+    .aside-div{
+        flex-direction: row;
+        padding: 24px 0px;
+    }
+    .banner-section{
+        text-align: center;
+    }
+    
+    
+    /* .bussiness-card{
+        
+    } */
 }
