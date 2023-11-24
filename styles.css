@@ -1,0 +1,319 @@
+/* Reset and Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* Header Section */
+.main-header {
+    background: linear-gradient(65deg, #362FCC 31.84%, #5D55FF 68.16%), var(--Pure, #FFF);
+    color: white;
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header-title {
+    margin: 0;
+    color: var(--Pure, #FFF);
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+/* Navigation Styles */
+.main-nav {
+    display: none;
+    gap: 36px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    color: #B6B3EB;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #FFF;
+}
+
+.header-button {
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.10);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.burger-menu {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/* Banner Section Styles */
+.banner {
+    background: linear-gradient(65deg, #362FCC 31.84%, #5D55FF 68.16%), var(--Pure, #FFF);
+    align-items: center;
+    width: 100%;
+}
+
+.banner-section {
+    margin: 36px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: right; /* Adjusted text alignment */
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* Make asides side by side for tablet and larger screens */
+.banner-section aside {
+    width: 100%;
+    align-items: center;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.banner-title {
+    color: var(--Pure, #FFF);
+    text-align: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 38px;
+}
+
+.banner-text {
+    color: #B6B3EB;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.aside-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* buttons */
+.banner-btn-primary{
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 8px;
+    background: var(--Pure, #FFF);
+    color: #110C64;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+}
+
+.banner-btn-secondary{
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    color: var(--Pure, #FFF);
+    
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+    background: transparent;
+}
+
+/* card */
+.banner-img{
+    align-items: end;
+    width: 163.119px;
+    height: 352.791px;
+    flex-shrink: 0;
+}
+.banner-aside-mix_img{
+    position: relative;
+}
+
+.aside-figure-card{
+    position: absolute;
+    align-items: start;
+    width: 292px;
+    height: 162px;
+    flex-shrink: 0;  
+    border-radius: 15px;
+    background: rgba(14, 10, 95, 0.60);
+    top: 180px;
+    
+}
+.section-spon-div{
+    display: none;
+}
+
+/* section spon div */
+
+/* bussiness section */
+
+.bussiness-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bussiness-card{
+    margin: 20px 0px;
+    width: 100%; 
+    height: auto;
+    text-align: center;
+    background: var(--Pure, #FFF);
+
+}
+
+.bussiness-container-cards{
+    display: flex;
+    flex-direction: column;
+}
+
+.bussiness-figure-image{
+    width: 100%;
+    object-fit: fill;
+}
+.bussiness-figure-icon{
+    display: flex;
+}
+
+.bussiness-fig-icon-img{
+    width: 120px;
+}
+.guideline-section{
+    background-color: rgb(62, 62, 206);
+}
+.guideline-section h2{
+    color: #FFF;
+}
+.footer-main{
+    display: flex;
+}
+.footer-icons{
+    display: flex;
+}
+.tesmo-main{
+    display: none;
+}
+
+/* bussiness-card{
+    display: flex;
+    flex-direction: column;
+} */
+
+
+
+/* Media Query */
+@media (min-width: 700px) {
+    .main-nav {
+        display: flex;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .banner-section {
+        flex-direction: row;
+        margin: 56px 0;
+    }
+
+    .banner-section aside {
+        width: 48%;
+        margin-bottom: 0;
+    }
+
+
+    .section-spon-div {
+        display: flex; /* Adjusted display property */
+        width: 100%; /* Set the width as needed */
+        flex-shrink: 0;
+        justify-content: space-between;
+    }
+    
+    .spon-div-icon {
+        display: flex;
+        margin: 24px 0px 27px;
+        height: 25.778px;
+    }
+    .bussiness-container-cards{
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .bussiness-figure-card{
+        width: auto;
+        padding: 36px; 
+        border-radius: 8px;
+        background: var(--Pure, #FFF);
+        box-shadow: 0px 24px 64px -12px rgba(26, 24, 65, 0.06);
+    }
+    .tesmo-main{
+        display: block;
+        padding: 20px 0px;
+    }
+
+    .tesmo-sub{
+        display: flex;
+        justify-content: space-between;
+    }
+    .tesmo-card-div{
+        display: flex;
+    }
+
+    .tesmo-card-profile{
+        width: 70px;
+        height: 70px;
+        border-radius: 70px;
+        border: 3px solid var(--Pure, #FFF);
+        object-fit: cover;
+        background:  lightgray 50% / cover no-repeat;
+        box-shadow: 0px 4px 27px 0px rgba(255, 255, 255, 0.20);
+    }
+    .tesmo-card-div-info{
+        line-height: 0px;
+        margin-left: 10px;
+    }
+    .tesmo-card-1{
+        border-radius: 8px;
+        padding: 29px 21px 34px 24px;
+    }
+    .tesmo-card-1:hover{
+        background: rgba(15, 70, 190, 0.027);
+    }
+ 
+}
